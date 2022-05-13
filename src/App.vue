@@ -1,30 +1,27 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+<router-view></router-view>
+<!-- <Home></Home> -->
 </template>
 
-<style lang="less">
+<script>
+// import Home from '@/components/home-vue.vue'
+// import Play from '@/play/play-vue.vue'
+export default ({
+  setup () {
+
+  }
+  // components: { Home }
+})
+</script>
+
+<style lang="less" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  // background-color: rgb(177, 94, 94);
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
