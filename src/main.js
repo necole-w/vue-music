@@ -2,11 +2,13 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/index'
 // import { createApp } from 'vue';
-import { Tabbar, TabbarItem, Button, Search, SwipeItem, Swipe, Form, Field, CellGroup, Col, Row, Grid, GridItem, Image } from 'vant'
+import { Tabbar, TabbarItem, Button, Search, SwipeItem, Swipe, Form, Field, CellGroup, Col, Row, Grid, GridItem, Image, List, Cell } from 'vant'
 // 导入字体图标
 import './assets/fonts/iconfont.css'
 // 导入Vuecookies
 import VueCookies from 'vue-cookies'
+// 导入播放器
+import AudioPlayer from '@liripeng/vue-audio-player'
 
 // 导入全局样式表
 import './assets/css/global.css'
@@ -19,7 +21,10 @@ axios.defaults.baseURL = 'https://music-9mvqycm2d-necole-w.vercel.app'
 // Vue.prototype.$http = axios
 
 const app = createApp(App)
+app.use(AudioPlayer)
 app.use(Swipe)
+app.use(List)
+app.use(Cell)
 app.use(Image)
 app.use(Grid)
 app.use(GridItem)

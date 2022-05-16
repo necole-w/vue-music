@@ -1,6 +1,6 @@
 <template>
-<Fand></Fand>
-  <van-tabbar v-model="active" active-color="#ee0a24" inactive-color="#ccc" >
+<Index></Index>
+  <van-tabbar v-model="active" active-color="#ee0a24" inactive-color="#ccc" :placeholder="true" >
   <van-tabbar-item class="iconfont icon-SanMiAppglyphico15" to="/index">首页</van-tabbar-item>
   <!-- <van-tabbar-item class="iconfont icon-SanMiAppglyphico13">播客</van-tabbar-item> -->
   <van-tabbar-item class="iconfont icon-SanMiAppglyphico16">我的</van-tabbar-item>
@@ -11,7 +11,7 @@
 
 <script>
 // import '@/res/fonts/iconfont.css'
-import Fand from '@/view/index/index-vue.vue'
+import Index from '@/view/index/index-vue.vue'
 import { ref } from 'vue'
 export default {
   setup () {
@@ -26,7 +26,7 @@ export default {
     }
   },
   components: {
-    Fand
+    Index
   }
 
 }

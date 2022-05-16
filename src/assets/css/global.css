@@ -6,7 +6,7 @@ html,body,#app{
   padding: 0;
   max-width: 900px;
   min-width: 300px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .van-field__control{

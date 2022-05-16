@@ -80,7 +80,7 @@ export default {
       }
       // 调用接口，发送短信验证码
       const { data: res } = await proxy.$http.get(`/captcha/sent?phone=${userphone.value}`)
-      console.log('发送验证码')
+      // console.log('发送验证码')
       console.log(res)
       // 这部分放调用发送短信的接口，这里先不做任何功能，主要先把按钮倒计时的功能实现
       // 将按钮禁用，防止再次点击
